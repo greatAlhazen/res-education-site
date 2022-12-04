@@ -11,6 +11,7 @@
     --blue-color:#87A2FB;
     --purple-color:#6F38C5;
     --box-shadow:0 5px 5px rgba(0,0,0,.7);
+    --border:2px solid rgba(0,0,0,.5);
 }
 
 html{
@@ -29,6 +30,22 @@ a{
     text-decoration: none;
     cursor:pointer;
     color:inherit;
+}
+
+.btn{
+    width:18rem;
+    background-color: var(--purple-color);
+    color:var(--white-color);
+    font-size:2.4rem;
+    cursor: pointer;
+    border-radius: 2.6rem;
+    border: none;
+    outline: none;
+}
+
+.btn:hover{
+    transform: translateY(.5rem);
+    background-color: var(--blue-color);
 }
 
 .navbar{
@@ -76,6 +93,33 @@ a{
     display: none !important;
 }
 
+.home{
+    height:calc(100vh - 7rem);
+    background:url(images/home.jpg) no-repeat;
+    background-size:100% 100%;
+    background-position:center ;
+    position: relative;
+}
+
+.homeContent{
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:2rem;
+    padding-top:2rem;
+}
+
+.homeContentTitle{
+    font-size:4.6rem;
+    letter-spacing: 1rem;
+    color:var(--white-color);
+    font-weight: bolder;
+    text-align: center;
+}
 
 
 
