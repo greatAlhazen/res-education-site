@@ -195,6 +195,63 @@ a{
     margin-top:1.5rem;
 }
 
+.about{
+    padding:7rem 3rem 0 3rem;
+    height:100vh;
+}
+
+.aboutBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+}
+
+.aboutContent{
+    width:40%
+}
+
+.aboutContentHeading{
+    font-size:3rem;
+    text-align: center;
+    margin-bottom:2rem;
+    text-transform: capitalize;
+    letter-spacing: .5rem;
+}
+
+.aboutContentDesc{
+    position: relative;
+}
+
+.aboutContentDesc p{
+    font-size:2rem;
+    color:var(--gray);
+    text-align:justify;
+}
+
+.aboutContentDesc img{
+    width:2rem;
+    height:2rem;
+    position: absolute;
+    top:0;
+    left:-2rem;
+}
+
+
+.aboutContentDesc span{
+    display: block;
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    color:var(--gray);
+    font-style: italic;
+}
+
+.aboutImage{
+    width:60%;
+    height:70vh;
+}
+
 
 
 
@@ -230,4 +287,29 @@ a{
         display: block !important;
     }
 
+    .aboutBox{
+        flex-flow: column-reverse;
+    }
+
+    .aboutContent{
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+        .aboutImage{
+            width:100%;
+        }
+}
+
+@media (max-width:468px) {
+    html{
+        font-size:45%;
+    }
+
+    .coursesBox{
+        width:100%;
+    }
 }
