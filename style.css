@@ -252,6 +252,88 @@ a{
     height:70vh;
 }
 
+.teachers{
+    padding-top:7rem;
+}
+
+.teachersContainer{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:3rem;
+}
+
+.teacher{
+    width:25rem;
+    height:38rem;
+    border:var(--border);
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:2rem;
+    background-color: var(--color);
+}
+
+.teacher:hover{
+    transform:scale(1.2);
+}
+
+.teacherImage{
+    width:8rem;
+    height:8rem;
+    border:var(--border);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.teacherHeading{
+    font-size:2.4rem;
+    color:var(--hard-black-color);
+}
+
+.teacherSubHeading{
+    margin-top:-1.8rem;
+    font-size:1.6rem;
+    opacity: .5;
+}
+
+.teacherDesc{
+    font-size:1.8rem;
+    text-align: center;
+    opacity: .8;
+}
+
+.teacherLinks{
+    margin-top:5rem;
+    display: flex;
+    gap:1.5rem;
+}
+
+.teacherLinks i{
+    font-size:3rem;
+    cursor: pointer;
+}
+
+.teacherLinks i:nth-child(1){
+    color:#3b5998;
+}
+
+.teacherLinks i:nth-child(2){
+    color:#8a3ab9;
+}
+
+.teacherLinks i:nth-child(3){
+    color:#fafafa;
+}
+
+
+
+
+
 
 
 
@@ -302,14 +384,22 @@ a{
         .aboutImage{
             width:100%;
         }
+
+         .teachers{
+            padding-top:25rem;
+        } 
 }
 
 @media (max-width:468px) {
     html{
-        font-size:45%;
+        font-size:50%;
     }
 
     .coursesBox{
         width:100%;
     }
+
+    .teachers{
+        padding-top:25rem;
+    } 
 }
