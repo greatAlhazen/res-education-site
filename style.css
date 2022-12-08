@@ -330,7 +330,94 @@ a{
     color:#fafafa;
 }
 
+.contact{
+    padding:7rem 3rem 0 3rem;
+    margin-top:13rem;
+    height:100vh;
+    /* background:url(images/contact.jpg) no-repeat; */
+    background-image: linear-gradient(to right bottom, rgba(0,0,0,.7), rgba(0,0,0,.9)), 
+    url(images/contact.jpg);
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
 
+
+.contact .heading{
+    position: absolute;
+    top:-6rem;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.contactContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5rem;
+}
+
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    gap:5rem;
+}
+
+.contactInfoSub{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+
+.contactInfoSub i{
+    font-size:3rem;
+    color:var(--purple-color);
+}
+
+.contactInfoSub span{
+    font-size:2.4rem;
+    color:var(--green);
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    gap:5rem;
+}
+
+.formContainer input,textarea{
+    background-color: var(--white-color);
+    border:none;
+    outline: none;
+    padding:1rem;
+}
+
+
+.formContainer input::placeholder,textarea::placeholder{
+    color:var(--gray);
+    font-size:1.5rem;
+}
+
+
+
+.formContainer input{
+    height:3rem;
+    width:45rem;
+    border-radius: 2rem;
+}
+
+.formContainer textarea{
+    height:20rem;
+    resize: none;
+}
+
+.formContainer .btn{
+    width:100%;
+    margin:0 auto;
+}
 
 
 
@@ -388,6 +475,19 @@ a{
          .teachers{
             padding-top:25rem;
         } 
+
+        .contactContainer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column-reverse;
+            gap:5rem;
+        }
+
+        .contactInfo{
+            flex-direction: row;
+           flex-wrap: wrap;
+        }
 }
 
 @media (max-width:468px) {
@@ -402,4 +502,15 @@ a{
     .teachers{
         padding-top:25rem;
     } 
+
+    .contactContainer{
+        padding:0;
+    }
+
+    .formContainer input{
+        width:100%;
+    }
+
+
+
 }
