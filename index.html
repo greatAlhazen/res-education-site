@@ -4,32 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Educational </title>
+    <title>Educational</title>
+    <!-- custom link -->
     <link rel="stylesheet" href="style.css">
+    <!-- google-fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
     <!-- font-awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
 
-    <!-- navbar section start -->
-    <section class="navbar">
-        <div class="logo">
-            <img src="images/logo.png" alt="">
-            <h1>Schoolar</h1>
-        </div>
+        <!-- navbar section start -->
+        <header class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+                <h1>Schoolar</h1>
+            </div>
+            <ul class="nav-list">
+                <li><a href='#home' class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href='#courses'>Courses</a></li>
+                <li><a href="#teachers">Teachers</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        <div class="fas fa-bars"></div>
+        </header>
+        <!-- navbar section end -->
 
-        <ul class="nav-list">
-            <li><a href='#home' class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href='#courses'>Courses</a></li>
-            <li><a href="#teachers">Teachers</a></li>
-            <li><a>Contact</a></li>
-        </ul>
 
-       <div class="fas fa-bars"></div>
-    </section>
-     <!-- navbar section end -->
+
 
         <!-- home section start -->
         <section class="home" id="home">
@@ -41,8 +46,10 @@
         </section>
           <!-- home section end -->
 
-        <!-- courses section start -->
 
+
+
+        <!-- courses section start -->
         <section class="courses" id="courses">
             <h1 class="heading">Explore Our Courses</h1>
 
@@ -96,6 +103,10 @@
 
         <!-- courses section end -->
 
+
+
+
+
         <!-- about section start -->
         <section class="about" id="about">
             <h1 class="heading">About Us</h1>
@@ -103,22 +114,26 @@
             <div class="aboutContent">
                 <h1 class="aboutContentHeading">learning is life-span-process for us</h1>
                 <div class="aboutContentDesc">
-                    <img src="images/quotes.png" alt="quote">
-                    <p>The students of the future will demand the learning support that is appropriate for their situation or context. Nothing more, nothing less. And they want it at the moment the need arises. Not sooner, not later. Mobile devices will be a key technology for providing that learning support.</p>  
+                    <p> 
+                       <img src="images/quotes.png" alt="quote">
+                        The students of the future will demand the learning support that is appropriate for their situation or context. Nothing more, nothing less. And they want it at the moment the need arises. Not sooner, not later. Mobile devices will be a key technology for providing that learning support.
+                       <img src="images/quotes.png" alt="">
+                    </p>  
                     <span class="aboutContentDescAuthor">-Dr. Marcus Specht</span>
                 </div>
             </div>
             <img src="images/education.png" alt="education" class="aboutImage">
         </div>
         </section>
-
         <!-- about section end -->
 
-        <!-- teachers section start -->
 
+
+
+
+        <!-- teachers section start -->
         <section class="teachers" id="teachers">
             <h1 class="heading">Our Teachers</h1>
-
             <div class="teachersContainer">
                 <div class="teacher" style="--color:rgb(179, 54, 54);">
                     <img src="images/person2.jpg" alt="" class="teacherImage">
@@ -131,7 +146,6 @@
                         <i class="fab fa-github"></i>
                     </div>
                 </div>
-
                 <div class="teacher"  style="--color:rgb(158, 58, 113);">
                     <img src="images/person1.jpg" alt="" class="teacherImage">
                     <h1 class="teacherHeading">Helena B.</h1>
@@ -143,7 +157,6 @@
                         <i class="fab fa-github"></i>
                     </div>
                 </div>
-
                 <div class="teacher"  style="--color:rgb(179, 171, 54);">
                     <img src="images/person4.jpg" alt="" class="teacherImage">
                     <h1 class="teacherHeading">Irina B.</h1>
@@ -155,7 +168,6 @@
                         <i class="fab fa-github"></i>
                     </div>
                 </div>
-
                 <div class="teacher"  style="--color:rgb(54, 179, 152);">
                     <img src="images/person3.jpg" alt="" class="teacherImage">
                     <h1 class="teacherHeading">Carmela B.</h1>
@@ -171,11 +183,85 @@
         </section>
         <!-- teachers section end -->
 
+
+
+
+
+        <!-- review section start -->
+        <section class="reviews" id="reviews">
+            <h1 class="heading">What They Are Saying</h1>
+            <div class="reviewContainer">
+                <div class="review">
+            <div class="reviewStars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <h1 class="reviewHeading">This is My Dream</h1>
+            <p class="reviewDesc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate recusandae iure eveniet, nulla excepturi nostrum adipisci minima nemo labore, laboriosam iusto beatae inventore omnis id accusantium autem rerum, obcaecati quisquam.</p>
+            <div class="reviewAuthor">
+                <i class="fa-regular fa-comments"></i>
+                <h4>-by gadget</h4>
+            </div>
+        </div>
+        <div class="review">
+            <div class="reviewStars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <h1 class="reviewHeading">Great Content</h1>
+            <p class="reviewDesc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate recusandae iure eveniet, nulla excepturi nostrum adipisci minima nemo labore, laboriosam iusto beatae inventore omnis id accusantium autem rerum, obcaecati quisquam.</p>
+            <div class="reviewAuthor">
+                <i class="fa-regular fa-comments"></i>
+                <h4>-by everyone</h4>
+            </div>
+        </div>
+        <div class="review">
+            <div class="reviewStars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h1 class="reviewHeading">True Place For Your Dreams</h1>
+            <p class="reviewDesc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate recusandae iure eveniet, nulla excepturi nostrum adipisci minima nemo labore, laboriosam iusto beatae inventore omnis id accusantium autem rerum, obcaecati quisquam.</p>
+            <div class="reviewAuthor">
+                <i class="fa-regular fa-comments"></i>
+                <h4>-by author</h4>
+            </div>
+        </div>
+        <div class="review">
+            <div class="reviewStars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <h1 class="reviewHeading">Not Dissapointed</h1>
+            <p class="reviewDesc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate recusandae iure eveniet, nulla excepturi nostrum adipisci minima nemo labore, laboriosam iusto beatae inventore omnis id accusantium autem rerum, obcaecati quisquam.</p>
+            <div class="reviewAuthor">
+                <i class="fa-regular fa-comments"></i>
+                <h4>-by someone</h4>
+            </div>
+        </div>
+        </div>
+        </section>
+        <!-- review section end -->
+
+
+
+
+        <!-- contact section start -->
         <section class="contact" id="contact">
             <h1 class="heading">Contact Us</h1>
-
             <div class="contactContainer">
-
             <div class="contactInfo">
                 <div class="contactInfoSub">
                     <i class="fas fa-phone"></i>
@@ -190,8 +276,8 @@
                     <span>random address,Turkey</span>
                 </div>
             </div>
-
             <form class="formContainer">
+                <h1 class="formContainerText">Get In Touch</h1>
                 <input type="text" placeholder="enter your title...">
                 <input type="email" placeholder="enter your email....">
                 <textarea placeholder="enter your comment..✍️" cols="30" rows="10"></textarea>
@@ -199,9 +285,18 @@
             </form>
         </div>
         </section>
+        <!-- contact section end -->
 
-       <!-- custom js link -->
-    <script src="app.js"></script>
+
+
+
+        <!-- footer section start -->
+        <footer>
+            All Right Reserved || 2022 Enes Uraz
+        </footer>
+        <!-- footer section end -->
     
+    <!-- custom js link -->
+    <script src="app.js"></script>
 </body>
 </html>

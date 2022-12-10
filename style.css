@@ -1,3 +1,5 @@
+/* css root properties define */
+
 *{
     margin:0;
     padding:0;
@@ -17,11 +19,12 @@
 }
 
 html{
-    font-size:62.5%;
+    font-size:60.5%;
 }
 
 body{
     background-color: var(--white-color);
+    font-family: 'Montserrat', sans-serif;
 }
 
 ul{
@@ -62,6 +65,10 @@ a{
 .heading:hover{
     background-color: #6F38C5;
 }
+
+
+
+/* navbar define */
 
 .navbar{
     width:100%;
@@ -111,9 +118,13 @@ a{
     display: none !important;
 }
 
+
+/* home section define */
+
 .home{
     height:calc(100vh - 7rem);
-    background:url(images/home.jpg) no-repeat;
+    background-image: linear-gradient(to right bottom, rgba(0,0,0,.7), rgba(0,0,0,.9)), 
+    url(images/home.jpg);
     background-size:100% 100%;
     background-position:center ;
     position: relative;
@@ -139,8 +150,12 @@ a{
     text-align: center;
 }
 
+
+
+/* courses section define */
+
 .courses{
-    padding:2rem 0;
+    padding:7rem 0;
 }
 
 .coursesContainer{
@@ -195,6 +210,10 @@ a{
     margin-top:1.5rem;
 }
 
+
+
+/* about section define */
+
 .about{
     padding:7rem 3rem 0 3rem;
     height:100vh;
@@ -219,9 +238,6 @@ a{
     letter-spacing: .5rem;
 }
 
-.aboutContentDesc{
-    position: relative;
-}
 
 .aboutContentDesc p{
     font-size:2rem;
@@ -229,12 +245,9 @@ a{
     text-align:justify;
 }
 
-.aboutContentDesc img{
+.aboutContentDesc p img{
     width:2rem;
     height:2rem;
-    position: absolute;
-    top:0;
-    left:-2rem;
 }
 
 
@@ -251,6 +264,11 @@ a{
     width:60%;
     height:70vh;
 }
+
+
+
+
+/* teachers section define */
 
 .teachers{
     padding-top:7rem;
@@ -276,10 +294,11 @@ a{
     flex-direction: column;
     gap:2rem;
     background-color: var(--color);
+    transition: all .5s;
 }
 
 .teacher:hover{
-    transform:scale(1.2);
+    transform:scale(1.1);
 }
 
 .teacherImage{
@@ -329,6 +348,73 @@ a{
 .teacherLinks i:nth-child(3){
     color:#fafafa;
 }
+
+
+
+
+
+/* reviews section define */
+
+.reviews{
+    padding:7rem 0;
+}
+
+.reviewContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:13rem;
+    flex-wrap: wrap;
+}
+
+.review{
+    width:40vw;
+}
+
+.reviewStars{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    color:gold;
+    margin-bottom:2rem;
+}
+
+.reviewStars i{
+    font-size:1.5rem;
+}
+
+.reviewHeading{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.reviewDesc{
+    text-align: justify;
+    font-size:1.8rem;
+    color:gray;
+}
+
+.reviewAuthor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.reviewAuthor i{
+    font-size:2.3rem;
+}
+
+.reviewAuthor h4{
+    font-size:2rem;
+    font-weight: 700;
+}
+
+
+
+/* contact section define */
 
 .contact{
     padding:7rem 3rem 0 3rem;
@@ -388,6 +474,12 @@ a{
     gap:5rem;
 }
 
+.formContainerText{
+    text-align: center;
+    font-size:2.5rem;
+    color:var(--green);
+}
+
 .formContainer input,textarea{
     background-color: var(--white-color);
     border:none;
@@ -422,6 +514,17 @@ a{
 
 
 
+/* footer section define */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#0dec50;
+    color:var(--white-color);
+    font-size:2.5rem;
+    padding:1.5rem;
+}
 
 
 
@@ -429,6 +532,10 @@ a{
 
 
 
+
+
+
+/* media queries define */
 
 
 @media (max-width:768px) {
@@ -457,7 +564,7 @@ a{
     }
 
     .aboutBox{
-        flex-flow: column-reverse;
+        flex-flow: column;
     }
 
     .aboutContent{
@@ -470,11 +577,16 @@ a{
 
         .aboutImage{
             width:100%;
+            height:50vh;
         }
 
          .teachers{
             padding-top:25rem;
         } 
+
+        .reviewContainer{
+            gap:8rem;
+        }
 
         .contactContainer{
             display: flex;
@@ -488,6 +600,10 @@ a{
             flex-direction: row;
            flex-wrap: wrap;
         }
+
+        .teacher:hover{
+            transform:scale(.9);
+        }
 }
 
 @media (max-width:468px) {
@@ -495,9 +611,6 @@ a{
         font-size:50%;
     }
 
-    .coursesBox{
-        width:100%;
-    }
 
     .teachers{
         padding-top:25rem;
@@ -511,6 +624,16 @@ a{
         width:100%;
     }
 
+    .reviewContainer{
+        gap:4rem;
+    }
 
+    footer{
+        font-size:1.2rem;
+    }
+
+    .homeContentTitle{
+        font-size: 2rem;
+    }
 
 }
