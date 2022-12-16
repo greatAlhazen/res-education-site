@@ -167,7 +167,7 @@ a{
 }
 
 .coursesBox{
-    width:22rem;
+    width:24rem;
     height:26rem;
     border:var(--border);
     padding:0 1.2rem;
@@ -580,10 +580,6 @@ footer{
             height:50vh;
         }
 
-         .teachers{
-            padding-top:25rem;
-        } 
-
         .reviewContainer{
             gap:8rem;
         }
@@ -610,11 +606,6 @@ footer{
     html{
         font-size:50%;
     }
-
-
-    .teachers{
-        padding-top:25rem;
-    } 
 
     .contactContainer{
         padding:0;
